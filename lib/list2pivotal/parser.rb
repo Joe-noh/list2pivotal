@@ -1,4 +1,4 @@
-require 'list2pivotal/story'
+require_relative 'story'
 
 module List2Pivotal
   class Parser

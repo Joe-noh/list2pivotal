@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+require 'optparse'
+require_relative '../lib/list2pivotal/cli'
+
+opt = OptionParser.new
+
+opt.on('-e', '--epic=EPIC')
+
+params = {}
+list = STDIN.read
+opt.parse!(ARGV, into: params)
+
+List2Pivotal::CLI.run(list, params)
