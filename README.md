@@ -11,15 +11,15 @@ $ echo '### api
 ### web
 
 - write tests: 1
-- implement it: 2' | be ./bin/list2pivotal --epic='Big Project'
+- implement it: 2' | be ./bin/list2pivotal
 ```
 
-Gets this
+Get this
 
 ```csv
 Title,Labels,Type,Estimate
-design the API,"Big Project,api",feature,3
-implement it,"Big Project,api",feature,2
-write tests,"Big Project,web",feature,1
-implement it,"Big Project,web",feature,2
+design the API,api,feature,3
+implement it,api,feature,2
+write tests,web,feature,1
+implement it,web,feature,2
 ```
