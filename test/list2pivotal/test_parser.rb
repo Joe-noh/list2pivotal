@@ -21,22 +21,18 @@ class TestParser < Test::Unit::TestCase
 
     assert { stories[0].title == "one" }
     assert { stories[0].labels == ["big project", "api"] }
-    assert { stories[0].type == "feature" }
     assert { stories[0].estimate == "3" }
 
     assert { stories[1].title == "two" }
     assert { stories[1].labels == ["big project", "api"] }
-    assert { stories[1].type == "feature" }
     assert { stories[1].estimate == "2" }
 
     assert { stories[2].title == "one" }
     assert { stories[2].labels == ["big project", "web"] }
-    assert { stories[2].type == "feature" }
     assert { stories[2].estimate == "1" }
 
     assert { stories[3].title == "two" }
     assert { stories[3].labels == ["big project", "web"] }
-    assert { stories[3].type == "feature" }
     assert { stories[3].estimate == "2" }
   end
 end

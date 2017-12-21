@@ -2,11 +2,11 @@ require 'csv'
 
 module List2Pivotal
   class Formatter
-    HEADER = %w[Title Labels Type Estimate]
+    HEADER = %w[Title Labels Estimate]
 
     def format!(stories)
       lines = stories.map { |s|
-        [s.title, s.labels.join(","), s.type, s.estimate]
+        [s.title, s.labels.join(","), s.estimate]
       }
 
       CSV.generate do |csv|
