@@ -11,15 +11,15 @@ $ echo '### api
 ### web
 
 - write tests: 1
-- implement it: 2' | be ./bin/list2pivotal
+- implement it: 2' | bundle exec ./bin/list2pivotal
 ```
 
 Get this
 
 ```csv
-Title,Labels,Type,Estimate
-design the API,api,feature,3
-implement it,api,feature,2
-write tests,web,feature,1
-implement it,web,feature,2
+Title,Labels,Estimate
+design the API,api,3
+implement it,api,2
+write tests,web,1
+implement it,web,2
 ```
