@@ -19,7 +19,6 @@ module List2Pivotal
           story = Story.new()
           story.title = m[1]
           story.labels = [@epic, small_epic]
-          story.type = "feature"
           story.estimate = m[2]
 
           stories << story
